@@ -21,7 +21,10 @@ if price_value <= TARGET_PRICE:
         result = connection.login(user=MY_EMAIL, password=EMAIL_PASS)
         connection.sendmail(from_addr=MY_EMAIL,
                             to_addrs="ferdgm@yahoo.com",
-                            msg="subject: Test Msg\n\nThis is  test message.")
+                            msg="subject: Amazon Price Alert \n\nThe price of your favourite product just hit "
+                                f"${price_value}.Would you like to buy it now?\nHere is the link to purchase it"
+                                f"https://www.amazon.com/Apple-MacBook-13-3in-MLH12LL-Touch-Bar/dp/B08M16712F/ref=sr_1_3?crid=1TT237UH6FVB4&keywords=macbook+pro&qid=1665260772&qu=eyJxc2MiOiI2LjM5IiwicXNhIjoiNi40OCIsInFzcCI6IjUuOTQifQ%3D%3D&sprefix=mac%2Caps%2C393&sr=8-3")
+        
 
 
 
